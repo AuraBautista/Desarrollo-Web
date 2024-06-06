@@ -1,0 +1,308 @@
+/* Importación de la fuente 'Poppins' desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* Reglas globales para eliminar márgenes, rellenos, aplicar box-sizing y remover estilos de enlaces y listas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Establece la fuente predeterminada del documento */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Define el contenedor principal con un ancho máximo y centrado horizontalmente */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para el encabezado con una imagen de fondo, gradiente y centramiento de contenido */
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(img/campamento.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Configuración del menú de navegación con posicionamiento y centramiento */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo del logotipo del sitio */
+.logo {
+    color: rgb(211, 14, 14);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* Configuración de los elementos de la lista de navegación */
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+/* Estilo para los enlaces del menú en estado hover */
+.menu .navbar ul li a:hover {
+    display: flex;
+}
+
+/* Estilo para los enlaces del menú */
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(2, 1, 0);
+    display: block;
+    font-weight: 600;
+}
+
+/* Esconde el menú de hamburguesa inicialmente */
+#menu {
+    display: none;
+}
+
+/* Estilo del icono del menú */
+.menu-icono {
+    width: 25px;
+}
+
+/* Configuración del cursor del menú y visibilidad */
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos del contenido del encabezado, centrado y estilos de textos */
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: bisque;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: aliceblue;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+/* Estilos del botón principal en el encabezado */
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: darksalmon;
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: bisque;
+}
+
+/* Sección 'Campamento' con padding y color de fondo */
+.Campamento {
+    padding: 100px 0;
+    background-color: bisque;
+    position: relative;
+}
+
+/* Estilos del contenido del campamento con centrado y márgenes */
+.camp-content {
+    text-align: center;
+}
+
+.camp-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: black;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: black;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+/* Configuración del grupo de productos con distribución flexible */
+.productos-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para cada ítem de producto con flexibilidad y centrado */
+.producto-item {
+    flex: 1 1 30%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.producto-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Sección general con padding */
+.general {
+    padding: 100px 0;
+}
+
+/* Estilo para el texto general con centrado y márgenes */
+.general-1 {
+    text-align: center;
+    padding: 0 250px;
+    margin-bottom: 50px;
+}
+
+/* Estilo del pie de página con color de fondo y padding */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+/* Configuración del contenido del pie de página con distribución flexible */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para los enlaces del pie de página */
+.footer .link {
+    flex: 1;
+    text-align: center;
+}
+
+.footer .link h3 {
+    margin-bottom: 15px;
+}
+
+.footer .link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .link ul li {
+    margin-bottom: 10px;
+}
+
+.footer .link ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .link ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del botón para volver al inicio */
+.btn-back-to-home {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back-to-home:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para imágenes responsivas */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos responsivos para pantallas de hasta 991px de ancho */
+@media(max-width: 991px) {
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 100px 30px;
+    }
+    .header-content p {
+        padding: 0;
+    }
+    .Campamento {
+        padding: 30px;
+    }
+    .camp-content h2 {
+        padding: 30px;
+    }
+    .txt-p {
+        padding: 0;
+    }
+    .Actividades-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .general {
+        flex-direction: column;
+    }
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .footer {
+        padding: 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metaetiquetas para el conjunto de caracteres y la configuración de la vista -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Camping Store - Products</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor del encabezado, incluyendo el encabezado mediante PHP -->
+    <div class="header-container">
+        <?php include 'header.html'; ?>
+    </div>
+    <!-- Contenido principal de la página -->
+    <main class="Productos">
+        <div class="Productos-content container">
+            <h2 id="productos">Nuestros productos</h2>
+            <!-- Contenedor para la lista de productos que se cargarán dinámicamente -->
+            <div class="productos-group" id="product-list">
+                <!-- Los productos se cargarán aquí dinámicamente -->
+            </div>
+        </div>
+        <!-- Botón para volver al inicio -->
+        <button onclick="window.location.href='index.html'" class="btn-back-to-home">Volver al Inicio</button>
+    </main>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-content container"> 
+            <!-- Sección "Sobre nosotros" -->
+            <div class="link">
+                <h3>Sobre nosotros</h3>
+                <ul>
+                    <li><a href="#"> ☏ 55 562045 </a></li>
+                </ul>
+            </div>
+            <!-- Sección "Visita nuestras redes" -->
+            <div class="link">
+                <h3 id="contacto">Visita nuestras redes</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/"> @camping.store.com </a></li>
+                </ul>
+            </div>
+            <!-- Sección "Servicio al cliente" -->
+            <div class="link">
+                <h3>Servicio al cliente</h3>
+                <ul>
+                    <li><a href="https://www.google.com/intl/es-419/gmail/about/">servicio_al_cliente_camp@hotmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Derechos de autor -->
+        <p>&copy; 2024 Camping Store </p>
+    </footer>
+    <!-- Inclusión del archivo JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+

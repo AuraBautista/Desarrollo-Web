@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la ventana gráfica -->
+    <title>Camping Store - Cart</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a la hoja de estilo CSS -->
+</head>
+<body>
+    <?php include 'header.html'; ?> <!-- Inclusión del encabezado de la página -->
+
+    <!-- Contenido principal de la página -->
+    <main class="Cart">
+        <div class="Cart-content container">
+            <h2 id="carrito">Tu carrito</h2> <!-- Título de la sección de carrito -->
+            <div id="cart-list">
+                <!-- Aquí se cargarán dinámicamente los elementos del carrito -->
+            </div>
+        </div>
+        <!-- Botón para volver al inicio -->
+        <button onclick="window.location.href='index.html'" class="btn-back-to-home">Volver al Inicio</button>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-content container"> 
+            <!-- Sección "Sobre nosotros" -->
+            <div class="link">
+                <h3>Sobre nosotros</h3>
+                <ul>
+                    <li><a href="#"> ☏ 55 562045 </a></li>
+                </ul>
+            </div>
+            <!-- Sección "Visita nuestras redes" -->
+            <div class="link">
+                <h3 id="contacto">Visita nuestras redes</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/"> @camping.store.com </a></li>
+                </ul>
+            </div>
+            <!-- Sección "Servicio al cliente" -->
+            <div class="link">
+                <h3>Servicio al cliente</h3>
+                <ul>
+                    <li><a href="https://www.google.com/intl/es-419/gmail/about/">servicio_al_cliente_camp@hotmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Derechos de autor -->
+        <p>&copy; 2024 Camping Store </p>
+    </footer>
+    
+    <!-- Script JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
